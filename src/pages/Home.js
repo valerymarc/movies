@@ -12,10 +12,10 @@ class HomeComponent extends Component {
         flag: flag
     }
     componentDidMount(){
-        if(!this.state.flag){
+       /* if(!this.state.flag){
             this.props.history.push({pathname: '/login'});
             return;
-        }
+        }*/
        this.props.getMovies();
     }
 

@@ -23,10 +23,10 @@ class Details extends Component {
 //componentDidMount et componentDidUpdate sont similaire au useEffect dans les hooks
     async componentDidMount(){
         try{
-           if(!this.state.flag){
+           /*if(!this.state.flag){
                this.props.history.push({pathname: '/login'});
                return;
-           }
+           }*/
            const idMovie = this.props.match.params.id;
            const url = `${API_URL}/movie/${idMovie}?api_key=${API_KEY}&language=fr`;
            const {data : {

@@ -21,10 +21,10 @@ class MoviePlayer extends Component {
       flag: flag
     }
     async componentDidMount(){
-        if(!this.state.flag){
+       /* if(!this.state.flag){
             this.props.history.push({pathname: '/login'});
             return;
-        }
+        }*/
         
        setTimeout(() => {
             const user = firebase.auth().currentUser;

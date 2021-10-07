@@ -35,11 +35,11 @@ class Login extends Component {
             <Alert color="primary">
                 <h3>Vous devez vous connecter pour continuer</h3>
             </Alert>
-            <StyledFirebaseAuth 
+           <StyledFirebaseAuth 
                 uiConfig={uiConfig}
                 firebaseAuth={firebase.auth()}
                 uiCallback={ui => ui.disableAutoSignIn()}
-            />
+            />  
 
         </div>)
     }
